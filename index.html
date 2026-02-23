@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safwan Institute</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <!-- SVG LOGO -->
+    <svg width="45" height="45" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="48" fill="#2e7d32"/>
+      <path d="M30 60 Q50 30 70 60" stroke="white" stroke-width="5" fill="none"/>
+      <text x="50%" y="80%" text-anchor="middle" fill="white" font-size="18" font-family="Cairo">SI</text>
+    </svg>
+    <span>Safwan Institute</span>
+  </div>
+
+  <nav>
+    <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+    <a href="#programs" data-en="Programs" data-ar="البرامج">Programs</a>
+    <a href="#booking" data-en="Book Online" data-ar="الحجز">Book Online</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+  </nav>
+
+  <div class="controls">
+    <button id="langToggle">AR</button>
+    <button id="themeToggle">🌙</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="overlay">
+    <h1 data-en="Learn the Quran with Excellence"
+        data-ar="تعلم القرآن بإتقان">
+        Learn the Quran with Excellence
+    </h1>
+
+    <p data-en="Taught by a Hafida from Morocco, holding a Bachelor's degree, now teaching in the USA."
+       data-ar="تدرّسها حافظة من المغرب، حاصلة على شهادة البكالوريوس، وتدرّس في الولايات المتحدة.">
+       Taught by a Hafida from Morocco...
+    </p>
+
+    <a href="#booking" class="btn"
+       data-en="Book a Session"
+       data-ar="احجز الآن">
+       Book a Session
+    </a>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs" class="section">
+  <h2 data-en="Our Programs" data-ar="برامجنا">Our Programs</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Quran Memorization</h3>
+      <p>Structured memorization with Tajweed.</p>
+    </div>
+    <div class="card">
+      <h3>Tajweed Rules</h3>
+      <p>Correct pronunciation & recitation.</p>
+    </div>
+    <div class="card">
+      <h3>Kids Classes</h3>
+      <p>Interactive Quran learning for children.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section alt">
+  <h2 data-en="Book a Session" data-ar="حجز جلسة">Book a Session</h2>
+
+  <form id="bookingForm">
+    <select required>
+      <option value="">Select Program</option>
+      <option>Quran Memorization</option>
+      <option>Tajweed</option>
+      <option>Kids Class</option>
+    </select>
+
+    <input type="date" required/>
+    <input type="time" required/>
+    <input type="text" placeholder="Your Name" required/>
+    <input type="email" placeholder="Email Address" required/>
+
+    <button type="submit"
+      data-en="Confirm Booking"
+      data-ar="تأكيد الحجز">
+      Confirm Booking
+    </button>
+  </form>
+
+  <p id="bookingMessage"></p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name"/>
+    <input type="email" placeholder="Email"/>
+    <textarea placeholder="Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/15551234567" class="whatsapp" target="_blank">
+  💬
+</a>
+
+<footer>
+  <p>© 2026 Safwan Institute</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
