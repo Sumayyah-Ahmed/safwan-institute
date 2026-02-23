@@ -46,29 +46,16 @@ nav a {
   cursor: pointer;
 }
 
-/* HERO 
-.hero {
-  background: url("https://images.unsplash.com/photo-1584551246679-0daf3d275d0f") no-repeat center/cover;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
 
 /* HERO */
 .hero {
   height: 90vh;
-
   background-image: url("https://images.unsplash.com/photo-1584551246679-0daf3d275d0f");
-
   background-size: cover;
-
+  
   /* This controls dome position */
   background-position: center 40%;
-
   background-repeat: no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: center;
