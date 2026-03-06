@@ -1,3 +1,9 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
 :root {
   --primary: #2e7d32;
   --bg: #ffffff;
@@ -46,10 +52,11 @@ nav a {
   cursor: pointer;
 }
 
-
 /* HERO */
 .hero {
   height: 90vh;
+  width: 100%;
+  max-width: 100vw;
   background-image: url("https://images.unsplash.com/photo-1584551246679-0daf3d275d0f");
   background-size: cover;
   
