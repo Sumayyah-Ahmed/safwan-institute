@@ -119,7 +119,19 @@ form {
 input, select, textarea {
   margin: 10px 0;
   padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
 }
+
 
 button {
   padding: 10px;
