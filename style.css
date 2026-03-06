@@ -132,6 +132,22 @@ input, select, textarea {
   width: 100%;
 }
 
+input[type="date"],
+input[type="time"] {
+  height: 45px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+/* Show placeholder-like text when empty */
+input[type="date"]:invalid,
+input[type="time"]:invalid {
+  color: #999;
+}
+
 
 button {
   padding: 10px;
