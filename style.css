@@ -132,7 +132,24 @@ input, select, textarea {
   width: 100%;
 }
 
-input[type="date"],
+input:not([type="date"]):not([type="time"]), select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"], 
+input[type="time"] {
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+/* input[type="date"],
 input[type="time"] {
   height: 45px;
   padding: 10px;
@@ -140,7 +157,7 @@ input[type="time"] {
   color: #333;
   background-color: white;
   border: 1px solid #ccc;
-}
+}*/
 
 /* Show placeholder-like text when empty */
 input[type="date"]:invalid,
