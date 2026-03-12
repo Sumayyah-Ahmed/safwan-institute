@@ -161,7 +161,6 @@ input[type="time"]:invalid {
 .input-wrapper input[type="date"],
 .input-wrapper input[type="time"] {
   width: 100%;
-  height: 45px;
   padding: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
