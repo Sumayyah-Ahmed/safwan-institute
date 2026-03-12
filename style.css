@@ -116,8 +116,7 @@ form {
   flex-direction: column;
 }
 
-
-/* keep shared field style */
+/* shared field style — all inputs same size */
 input, select, textarea {
   margin: 10px 0;
   padding: 10px;
@@ -131,63 +130,30 @@ input, select, textarea {
   width: 100%;
 }
 
-/* apply appearance reset ONLY to normal text-like fields */
+/* placeholder color for all fields */
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: #999;
+}
+
+/* appearance reset for text-like fields only */
 input:not([type="date"]):not([type="time"]), select, textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-/* keep native date/time controls visible */
+/* restore native date/time pickers — no extra height/wrapper needed */
 input[type="date"],
 input[type="time"] {
   -webkit-appearance: auto;
   -moz-appearance: auto;
   appearance: auto;
-  min-height: 45px;
 }
 
-/* Show placeholder-like text when empty */
+/* grey text when date/time is empty */
 input[type="date"]:invalid,
 input[type="time"]:invalid {
   color: #999;
-}
-
-.input-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.input-wrapper input[type="date"],
-.input-wrapper input[type="time"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  color: transparent; /* hide native text initially */
-}
-
-.input-wrapper input[type="date"]:focus,
-.input-wrapper input[type="time"]:focus,
-.input-wrapper input[type="date"]:valid,
-.input-wrapper input[type="time"]:valid {
-  color: #000; /* show text when focused or has value */
-}
-
-.placeholder-label {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #999;
-  pointer-events: none;
-}
-
-.input-wrapper input[type="date"]:focus + .placeholder-label,
-.input-wrapper input[type="date"]:valid + .placeholder-label,
-.input-wrapper input[type="time"]:focus + .placeholder-label,
-.input-wrapper input[type="time"]:valid + .placeholder-label {
-  display: none;
 }
 
 button {
