@@ -181,6 +181,7 @@ input[type="time"]:invalid {
   transform: translateY(-50%);
   color: #999;
   pointer-events: none;
+  opacity: 1;
 }
 
 .input-wrapper input[type="date"]:focus + .placeholder-label,
