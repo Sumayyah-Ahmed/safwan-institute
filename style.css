@@ -164,7 +164,7 @@ input[type="time"]:invalid {
   padding: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  color: #999; /* hide native text initially */
+  color: transparent; /* hide native text initially */
 }
 
 .input-wrapper input[type="date"]:focus,
