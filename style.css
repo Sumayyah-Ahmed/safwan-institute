@@ -153,6 +153,43 @@ input[type="time"]:invalid {
   color: #999;
 }
 
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input[type="date"],
+.input-wrapper input[type="time"] {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: transparent; /* hide native text initially */
+}
+
+.input-wrapper input[type="date"]:focus,
+.input-wrapper input[type="time"]:focus,
+.input-wrapper input[type="date"]:valid,
+.input-wrapper input[type="time"]:valid {
+  color: #000; /* show text when focused or has value */
+}
+
+.placeholder-label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
+.input-wrapper input[type="date"]:focus + .placeholder-label,
+.input-wrapper input[type="date"]:valid + .placeholder-label,
+.input-wrapper input[type="time"]:focus + .placeholder-label,
+.input-wrapper input[type="time"]:valid + .placeholder-label {
+  display: none;
+}
 
 button {
   padding: 10px;
